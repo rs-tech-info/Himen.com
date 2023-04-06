@@ -507,7 +507,7 @@ body {
 .header .wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: url("../img/Image1.jpg") no-repeat right center/auto 100%;
+  background: url("img/Image1.jpg") no-repeat right center/auto 100%;
 }
 
 @media (max-width: 991px) {
@@ -599,7 +599,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    background: url("../img/Image1--mobile.jpg") no-repeat center/contain;
+    background: url("img/Image1--mobile.jpg") no-repeat center/contain;
     padding-top: 150px;
     margin-top: -150px;
   }
@@ -683,7 +683,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   min-height: 510px;
-  background: url("../img/Image2.jpg") no-repeat left center/auto 100%;
+  background: url("img/Image2.jpg") no-repeat left center/auto 100%;
 }
 
 @media (max-width: 991px) {
@@ -740,7 +740,7 @@ body {
     height: 250px;
     bottom: 0;
     left: 0;
-    background: url("../img/Image2--mobile.jpg") no-repeat center/contain;
+    background: url("img/Image2--mobile.jpg") no-repeat center/contain;
     z-index: 1;
   }
 }
@@ -1057,7 +1057,7 @@ body {
 }
 
 .doc .wrapper {
-  background: url("../img/Image3.jpg") no-repeat right center/auto 100%;
+  background: url("img/Image3.jpg") no-repeat right center/auto 100%;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1118,7 +1118,7 @@ body {
 
 @media (max-width: 991px) {
   .doc__text-block {
-    background: url("../img/Image3--mobile.jpg") no-repeat center/contain;
+    background: url("img/Image3--mobile.jpg") no-repeat center/contain;
   }
 }
 
@@ -1158,7 +1158,7 @@ body {
 .order .wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: url("../img/Image4.jpg") no-repeat right center/auto 100%;
+  background: url("img/Image4.jpg") no-repeat right center/auto 100%;
 }
 
 @media (max-width: 991px) {
@@ -1254,7 +1254,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    background: url("../img/Image4--mobile.jpg") no-repeat center top/contain;
+    background: url("img/Image4--mobile.jpg") no-repeat center top/contain;
     padding-top: 100px;
   }
 }
