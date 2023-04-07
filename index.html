@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+
+<head>
+  <html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <style>
+    .ac_footer {
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      padding: 50px 0;
+      color: #A12000;
+    }
+
+    .ac_footer a {
+      color: #A12000;
+    }
+
+    .ac_footer p {
+      text-align: center;
+    }
+
+    img[height="1"],
+    img[width="1"] {
+      display: none !important;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Hammer Of Thor</title>
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .compare__items {
+      position: relative;
+      display: table;
+      width: 100%;
+    }
+
+    .compare__items::before {
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      bottom: 19px;
+      margin: auto;
+      content: "";
+    }
+
+    .compare__item {
+      position: relative;
+      display: table-cell;
+      width: 50%;
+    }
+
+    .compare-item {
+      padding-bottom: 155px;
+    }
+
+    .compare-item::before {
+      position: absolute;
+      bottom: 0px;
+      content: "";
+    }
+
+    .compare-item_before {
+      padding-right: 30px;
+    }
+
+    .compare-item_before::before {
+      right: 43px;
+    }
+
+    .compare-item_after {
+      padding-left: 30px;
+    }
+
+    .compare-item_after::before {
+      left: 43px;
+    }
+
+    .compare-item__information-wrapper {
+      margin-bottom: 200px;
+    }
+
+    .compare-item__information-wrapper_before {
+      text-align: right;
+    }
+
+    .compare-item__information {
+      position: relative;
+      padding-top: 36px;
+      padding-bottom: 20px;
+      display: inline-block;
+      width: 462px;
+      font-size: 20px;
+      line-height: 1.2;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .compare-item__information::before {
+      position: absolute;
+      top: -10px;
+      left: 0px;
+      width: 0px;
+      height: 0px;
+      content: "";
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+
+    .compare-item__information_before {
+      padding-right: 10px;
+      padding-left: 59px;
+      background-image: linear-gradient(80deg, transparent 5%, rgb(227, 219, 196) 0px);
+    }
+
+    .compare-item__information_before::before {
+      border-right: 462px solid rgb(171, 171, 171);
+    }
+
+    .compare-item__information_after {
+      padding-right: 49px;
+      padding-left: 20px;
+      background-image: linear-gradient(100deg, rgb(227, 219, 196) 95%, transparent 0px);
+    }
+
+    .compare-item__information_after::before {
+      border-left: 462px solid rgb(171, 171, 171);
+    }
+
+    .compare-item__information span {
+      font-weight: 700;
+    }
+
+    .compare-item__time-wrapper {
+      padding: 0px 20px;
+    }
+
+    .compare-item__time-wrapper_after {
+      text-align: right;
+    }
+
+    .compare-item__time {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 35px;
+      display: inline-block;
+      width: 222px;
+    }
+
+    .compare-item__time::before {
+      position: absolute;
+      top: -10px;
+      left: 0px;
+      width: 0px;
+      height: 0px;
+      content: "";
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+
+    .compare-item__time::after {
+      position: absolute;
+      top: -168px;
+      right: 0px;
+      left: 0px;
+      margin: auto;
+      content: "";
+    }
+
+    .compare-item__time_before {
+      padding-right: 15px;
+      padding-left: 47px;
+      background-image: linear-gradient(80deg, transparent 12%, rgb(255, 191, 0) 0px);
+    }
+
+    .compare-item__time_before::before {
+      border-right: 222px solid rgb(171, 171, 171);
+    }
+
+    .compare-item__time_before::after {
+      background-image: url('img/retina.png');
+      background-position: -720px 0px;
+      width: 150px;
+      height: 200px;
+    }
+
+    .compare-item__time_after {
+      padding-right: 47px;
+      padding-left: 15px;
+      background-image: linear-gradient(100deg, rgb(255, 191, 0) 88%, transparent 0px);
+    }
+
+    .compare-item__time_after::before {
+      border-left: 222px solid rgb(171, 171, 171);
+    }
+
+    .compare-item__time_after::after {
+      background-image: url('img/retina.png');
+      background-position: -378px -318px;
+      width: 150px;
+      height: 200px;
+    }
+
+    .compare-item__time-title {
+      margin-bottom: 12px;
+      font-size: 20px;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .compare-item__time-value {
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .compare-item__length {
+      position: absolute;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .compare-item__length::after {
+      position: absolute;
+      top: 7px;
+      width: 155px;
+      height: 1px;
+      content: "";
+      background-color: rgb(0, 0, 0);
+    }
+
+    .compare-item__length_before {
+      right: 177px;
+      bottom: 381px;
+    }
+
+    .compare-item__length_before::after {
+      left: 120%;
+    }
+
+    .compare-item__length_after {
+      left: 185px;
+      bottom: 485px;
+    }
+
+    .compare-item__length_after::after {
+      right: 120%;
+    }
+
+    .compare-item__width {
+      position: absolute;
+      bottom: 113px;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .compare-item__width_before {
+      right: 78px;
+      width: 106px;
+    }
+
+    .compare-item__width_after {
+      left: 75px;
+      width: 124px;
+    }
+
+    .compare-item__label {
+      position: absolute;
+      bottom: 80px;
+      padding-right: 10px;
+      padding-left: 10px;
+      min-width: 90px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 51px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      background-color: rgb(252, 3, 38);
+    }
+
+    .compare-item__label_before {
+      right: 181px;
+    }
+
+    .compare-item__label_after {
+      left: 196px;
+    }
+
+    .composition__item:last-child::before {
+      display: none;
+    }
+
+    .composition__item:nth-child(2n+1) {
+      padding-left: 98px;
+    }
+
+    .composition__item:nth-child(2n+1)::before {
+      left: 96px;
+      bottom: -33px;
+      transform: rotate(29deg);
+    }
+
+    .composition__item:nth-child(2n) {
+      padding-right: 98px;
+    }
+
+    .composition__item:nth-child(2n)::before {
+      left: 89px;
+      bottom: -45px;
+      transform: rotate(-29deg);
+    }
+
+    .composition__item::before {
+      position: absolute;
+      z-index: -1;
+      width: 2px;
+      height: 48px;
+      content: "";
+      background-color: rgb(227, 219, 196);
+    }
+
+    .compositions-cols__item-title::before {
+      position: absolute;
+      z-index: -1;
+      top: -17px;
+      left: 0px;
+      width: 0px;
+      height: 0px;
+      content: "";
+      border-top: 17px solid transparent;
+      border-right: 230px solid rgb(225, 238, 245);
+      border-bottom: 17px solid transparent;
+    }
+
+    .compositions-cols__item-check::after,
+    .compositions-cols__item-check::before {
+      position: absolute;
+      width: 4px;
+      content: "";
+      background-color: rgb(43, 162, 99);
+      border-radius: 4px;
+    }
+
+    .compositions-cols__item-check::before {
+      top: 8px;
+      left: 0px;
+      height: 10px;
+      transform: rotate(-45deg);
+    }
+
+    .compositions-cols__item-check::after {
+      top: 2px;
+      left: 8px;
+      height: 18px;
+      transform: rotate(45deg);
+    }
+
+    .container {
+      position: relative;
+      margin: 0px auto;
+      padding-right: 20px;
+      padding-left: 20px;
+      width: 1007px;
+    }
+
+    .s-increase {
+      padding-top: 58px;
+      padding-bottom: 50px;
+      background-color: rgb(171, 171, 171);
+    }
+
+    .s-increase__title {
+      margin-bottom: 29px;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .s-increase__title-inner {
+      display: inline-block;
+    }
+
+    .s-increase__title-top {
+      text-align: left;
+    }
+
+    .s-increase__title-bottom {
+      padding-left: 70px;
+    }
+
+    .s-increase__title span {
+      font-size: 60px;
+      color: rgb(252, 3, 38);
+    }
+
+    @media only screen and (min-width: 960px) {
+      .compare__items::before {
+        background-image: url('img/retina.png');
+        background-position: -636px 0px;
+        width: 76px;
+        height: 477px;
+      }
+
+      .compare-item_before::before {
+        background-image: url('img/retina.png');
+        background-position: -199px -318px;
+        width: 171px;
+        height: 382px;
+      }
+
+      .compare-item_after::before {
+        background-image: url('img/retina.png');
+        background-position: 0px -318px;
+        width: 191px;
+        height: 487px;
+      }
+
+      .experts__item-image-wrapper {
+        background-image: url('img/retina.png');
+        background-position: 0px 0px;
+        width: 310px;
+        height: 310px;
+      }
+
+      .experts__item:nth-child(2n) .experts__item-image-wrapper {
+        background-image: url('img/retina.png');
+        background-position: -318px 0px;
+        width: 310px;
+        height: 310px;
+      }
+    }
+
+    @media not all,
+    not all,
+    only screen and (min-width: 960px) and (min-resolution: 192dpi) {
+
+      .compare-item_after::before,
+      .compare-item_before::before,
+      .compare__items::before,
+      .experts__item-image-wrapper,
+      .experts__item:nth-child(2n) .experts__item-image-wrapper {
+        background-image: url('img/retina.png');
+        background-size: 870px 805px;
+      }
+    }
+
+    @media only screen and (max-width: 959px) {
+      .footer__inner::before {
+        display: none;
+      }
+
+      .package__image {
+        background-position-x: 35px;
+        margin-bottom: 20px;
+      }
+
+      .button {
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+
+      .compare__items::before {
+        bottom: 15px;
+        background-image: url('img/retina-m.png');
+        background-position: -238px 0px;
+        width: 50px;
+        height: 291px;
+      }
+
+      .compare__item {
+        text-align: center;
+      }
+
+      .compare-item {
+        padding-top: 5px;
+        padding-bottom: 0px;
+      }
+
+      .compare-item::before {
+        position: static;
+        display: inline-block;
+      }
+
+      .compare-item_before {
+        padding-right: 0px;
+      }
+
+      .compare-item_before::before {
+        background-image: url('img/retina-m.png');
+        background-position: -125px 0px;
+        width: 105px;
+        height: 233px;
+      }
+
+      .compare-item_after {
+        padding-left: 0px;
+      }
+
+      .compare-item_after::before {
+        background-image: url('img/retina-m.png');
+        background-position: 0px 0px;
+        width: 117px;
+        height: 298px;
+      }
+
+      .compare-item__information-wrapper,
+      .compare-item__time-wrapper {
+        display: none;
+      }
+
+      .compare-item__length {
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .compare-item__length::after {
+        width: 92px;
+      }
+
+      .compare-item__length_before {
+        right: 106px;
+        bottom: 237px;
+      }
+
+      .compare-item__length_after {
+        left: 107px;
+        bottom: 301px;
+      }
+
+      .compare-item__width {
+        bottom: 71px;
+        margin: auto;
+        font-size: 19px;
+      }
+
+      .compare-item__width_before {
+        right: 4px;
+        left: 0px;
+        width: 64px;
+      }
+
+      .compare-item__width_after {
+        right: 0px;
+        left: 0px;
+        width: 75px;
+      }
+
+      .compare-item__label {
+        min-width: 82px;
+        font-size: 14px;
+        line-height: 35px;
+        transform: rotate(-90deg);
+      }
+
+      .compare-item__label_before {
+        right: 95px;
+      }
+
+      .compare-item__label_after {
+        left: 102px;
+      }
+
+      .composition__item:nth-child(2n+1) {
+        padding-left: 0px;
+      }
+
+      .composition__item:nth-child(2n) {
+        padding-right: 0px;
+      }
+
+      .composition__item::before {
+        display: none;
+      }
+
+      .compositions-cols__item-title::before {
+        top: 0px;
+        left: -1000px;
+        width: 1000px;
+        height: 100%;
+        background-color: rgb(255, 191, 0);
+        border: medium none;
+      }
+
+      .container {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 320px;
+      }
+
+      .experts__item {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        min-height: auto;
+      }
+
+      .experts__item:last-child {
+        display: none;
+      }
+
+      .experts__item-text {
+        padding: 12px 0px 22px;
+        font-size: 18px;
+        text-align: justify;
+        background-color: rgb(28, 152, 210);
+      }
+
+      .experts__item-text,
+      .experts__item:nth-child(2n) .experts__item-text {
+        background-image: none;
+      }
+
+      .experts__item-text::after,
+      .experts__item-text::before {
+        bottom: auto;
+      }
+
+      .experts__item-text::before {
+        left: -1000px;
+        width: 1000px;
+        height: 100%;
+      }
+
+      .experts__item-text::after {
+        right: -1000px;
+        left: auto;
+        width: 1000px;
+        height: 100%;
+        border-radius: 0px;
+      }
+
+      .experts__item-text-shadow {
+        display: none;
+      }
+
+      .experts__item-text p {
+        margin-bottom: 23px;
+      }
+
+      .experts__item-text p::before {
+        display: none;
+      }
+
+      .experts__item-image-wrapper {
+        position: relative;
+        bottom: auto;
+        margin-bottom: -42px;
+        margin-left: 15px;
+        background-image: url('img/retina-m.png');
+        background-position: -296px 0px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .experts__item-image {
+        left: 8px;
+        bottom: 3px;
+        width: 84px;
+      }
+
+      .experts__item-title {
+        right: auto;
+        left: 116px;
+        bottom: 51px;
+        width: 148px;
+        text-align: left;
+      }
+
+      .experts__item-name,
+      .experts__item-post {
+        font-size: 17px;
+      }
+
+      .footer {
+        padding-top: 22px;
+        padding-bottom: 0px;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+      }
+
+      .footer__inner {
+        padding-top: 0px;
+      }
+
+      .footer__inner::before {
+        top: 55px;
+        right: 14px;
+        width: 294px;
+        height: 373px;
+        background-image: url('img/girl.png');
+      }
+
+      .footer__title {
+        margin-bottom: 18px;
+        font-family: Roboto Condensed, sans-serif;
+        font-size: 21px;
+        text-align: center;
+      }
+
+      .footer__title-top {
+        font-size: inherit;
+        font-weight: 400;
+      }
+
+      .footer__title-top {
+        margin-bottom: 0px;
+      }
+
+      .package {
+        margin-bottom: 15px;
+      }
+
+      .footer__title-top-left {
+        width: auto;
+      }
+
+      .footer__title-top-right {
+        margin-left: 0px;
+        font-weight: 400;
+      }
+
+      .footer__title-bottom {
+        padding-left: 0px;
+        max-width: 400px;
+        font-size: inherit;
+        font-weight: 700;
+      }
+
+      .footer__left {
+        position: static;
+      }
+
+      .footer__form {
+        margin-top: -10px;
+        padding-right: 0px;
+        background-color: rgb(252, 3, 38);
+      }
+
+      .footer__form::after,
+      .footer__form::before {
+        position: absolute;
+        top: 0px;
+        width: 1000px;
+        height: 100%;
+        content: "";
+        background-color: rgb(252, 3, 38);
+      }
+
+      .footer__form::before {
+        left: -1000px;
+      }
+
+      .footer__form::after {
+        right: -1000px;
+      }
+
+      .footer__package {
+        position: static;
+        margin-top: 0px;
+        padding-left: 0px;
+        width: 100%;
+      }
+
+      .footer__timer {
+        display: none;
+      }
+
+      .form {
+        position: relative;
+        z-index: 1;
+        display: block;
+        text-align: left;
+      }
+
+      .form__rows {
+        margin-right: 0px;
+        padding: 17px 17px 26px;
+        width: 100%;
+        height: auto;
+        background-image: none;
+      }
+
+      .form__title {
+        font-size: 20px;
+      }
+
+      .form__price {
+        margin-top: 0px;
+        padding-right: 0px;
+      }
+
+      .header-advantages__item {
+        margin-bottom: 15px;
+        padding-left: 0px;
+        display: table;
+      }
+
+      .header-advantages__item-title {
+        padding-left: 10px;
+        display: table-cell;
+        font-size: 18px;
+        vertical-align: middle;
+      }
+
+      .header-advantages__item-icon-wrapper {
+        position: static;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .header-advantages__item-icon {
+        position: static;
+        display: inline-block;
+      }
+
+      .header {
+        padding-top: 7px;
+        padding-bottom: 50px;
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+      }
+
+      .header__inner {
+        padding-top: 0px;
+        padding-right: 0px;
+      }
+
+      .header__inner::before {
+        display: none;
+      }
+
+      .header__logo {
+        position: static;
+        margin-bottom: 3px;
+        text-align: center;
+      }
+
+      .header__subtitle {
+        margin-bottom: 5px;
+        padding: 0px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-image: none;
+      }
+
+      .header__subtitle span {
+        display: block;
+        font-size: 23px;
+      }
+
+      .header__title {
+        display: none;
+      }
+
+      .header__advantages {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+      }
+
+      .header__right {
+        position: static;
+      }
+
+      .header__price {
+        position: static;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .header__package {
+        position: static;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+      }
+
+      .header__timer {
+        display: none;
+      }
+
+      .logo {
+        max-width: none;
+        font-size: 34px;
+        line-height: 1.2;
+        color: rgb(255, 255, 255);
+        background-image: none;
+      }
+
+      .means__item::before {
+        margin-left: -6px;
+        display: inline-block;
+        width: 0px;
+        height: 90px;
+        vertical-align: middle;
+        content: "";
+      }
+
+      .means__item:nth-child(2n) {
+        margin-left: 0px;
+        padding-left: 100px;
+      }
+
+      .means__item-text::before {
+        display: none;
+      }
+
+      .package__image {
+        position: relative;
+        width: 220px;
+        height: 243px;
+        background-image: url('img/product.png');
+      }
+
+      .package__sale {
+        top: 169px;
+        left: 182px;
+        z-index: 1;
+      }
+
+      .footer .package__sale,
+      .package__sale-text {
+        display: none;
+      }
+
+      .price {
+        padding: 5px 0px 22px;
+        display: block;
+        width: auto;
+        height: auto;
+        text-align: center;
+        background-color: rgb(255, 191, 0);
+        background-image: none;
+      }
+
+      .price::after,
+      .price::before {
+        position: absolute;
+        top: 0px;
+        width: 1000px;
+        height: 100%;
+        content: "";
+        background-color: rgb(255, 191, 0);
+      }
+
+      .price::before {
+        left: -1000px;
+      }
+
+      .price::after {
+        right: -1000px;
+      }
+
+      .price__inner {
+        display: inline-block;
+      }
+
+      .price__button {
+        padding-left: 0px;
+        padding-bottom: 0px;
+      }
+
+      .price__button,
+      .price__title {
+        display: block;
+        text-align: center;
+      }
+
+      .price__items {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      .price__items-old {
+        font-size: 20px;
+        line-height: 1;
+        vertical-align: middle;
+      }
+
+      .price__items-new {
+        display: inline-block;
+        font-size: 30px;
+        line-height: 1;
+        vertical-align: middle;
+      }
+
+      .reviews__item {
+        margin-bottom: 13px;
+        padding-left: 0px;
+      }
+
+      .reviews__item:nth-child(n+3) {
+        display: none;
+      }
+
+      .reviews__item:nth-child(2n) {
+        padding-right: 0px;
+      }
+
+      .reviews__item-text-wrapper {
+        padding: 0px;
+        width: 100%;
+        background-image: none;
+      }
+
+      .reviews__item-text-wrapper::before {
+        display: none;
+      }
+
+      .reviews__item-title-wrapper {
+        margin-top: -94px;
+        padding-left: 118px;
+        min-height: 85px;
+      }
+
+      .reviews__item-title {
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      .reviews__item-title span {
+        display: inline-block;
+        vertical-align: bottom;
+      }
+
+      .reviews__item-text {
+        font-size: 18px;
+      }
+
+      .reviews__item-image-wrapper {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        padding-left: 4px;
+        display: block;
+        max-width: none;
+        text-align: left;
+      }
+
+      .reviews__item:nth-child(2n) .reviews__item-image-wrapper {
+        right: auto;
+      }
+
+      .reviews__item-image {
+        width: 104px;
+      }
+
+      .reviews__item-name-wrapper {
+        position: static;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: left;
+      }
+
+      .reviews__item-name {
+        padding-right: 0px;
+        display: inline-block;
+        font-size: 18px;
+        vertical-align: middle;
+        margin-top: 0px;
+      }
+
+      .reviews__item:nth-child(2n) .reviews__item-name {
+        padding-left: 0px;
+      }
+
+      .reviews__item-age {
+        padding-right: 0px;
+        display: block;
+        font-size: 18px;
+      }
+
+      .reviews__item:nth-child(2n) .reviews__item-age {
+        padding-left: 0px;
+      }
+
+      .s-before-after__compositions::before,
+      .s-before-after__items {
+        display: none;
+      }
+
+      .s-composition__items::after {
+        display: none;
+      }
+
+      .s-experts {
+        padding-top: 17px;
+        padding-bottom: 0px;
+        overflow: hidden;
+        background-color: rgb(225, 238, 245);
+        background-image: none;
+      }
+
+      .s-experts__title-wrapper {
+        margin-bottom: 58px;
+      }
+
+      .s-experts__title {
+        font-size: 26px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .s-experts__title span {
+        font-size: inherit;
+        font-weight: 700;
+      }
+
+      .s-experts__title-bottom {
+        padding-left: 0px;
+      }
+
+      .s-experts__items {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+
+      .s-girls-reviews__content::after {
+        top: 7px;
+        left: -4px;
+        width: 127px;
+        height: 191px;
+        background-image: url('img/girls.png');
+      }
+
+      .s-girls-reviews__right-title::after {
+        position: absolute;
+        top: 0px;
+        right: -1000px;
+        width: 1000px;
+        height: 100%;
+        content: "";
+        background-color: rgb(252, 3, 38);
+      }
+
+      .s-girls-reviews__right-title::before {
+        top: 0px;
+        left: -1000px;
+        width: 1000px;
+        height: 100%;
+        background-color: rgb(252, 3, 38);
+        border: medium none;
+      }
+
+      .s-girls-reviews__right-title-wrapper::before {
+        display: none;
+      }
+
+      .s-increase {
+        padding-top: 18px;
+        padding-bottom: 55px;
+      }
+
+      .s-increase__title {
+        margin-top: 35px;
+        margin-bottom: -10px;
+        font-size: 26px;
+        font-weight: 400;
+      }
+
+      .s-increase__title-top {
+        text-align: center;
+      }
+
+      .s-increase__title-bottom {
+        padding-left: 0px;
+        font-size: 23px;
+      }
+
+      .s-increase__title span {
+        font-size: inherit;
+        font-weight: 700;
+      }
+
+      .s-reviews {
+        padding-top: 17px;
+        padding-bottom: 0px;
+        overflow: hidden;
+      }
+
+      .s-reviews__title-wrapper {
+        margin-bottom: 14px;
+      }
+
+      .s-reviews__title {
+        font-size: 26px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .s-reviews__title span {
+        font-size: inherit;
+        font-weight: 700;
+      }
+
+      .s-reviews__title-bottom {
+        padding-left: 0px;
+      }
+
+      .s-reviews__items {
+        position: relative;
+        padding: 18px 0px 11px;
+        background-color: rgb(255, 191, 0);
+      }
+
+      .s-reviews__items::after,
+      .s-reviews__items::before {
+        position: absolute;
+        top: 0px;
+        width: 1000px;
+        height: 100%;
+        content: "";
+        background-color: rgb(255, 191, 0);
+      }
+
+      .s-reviews__items::before {
+        left: -1000px;
+      }
+
+      .s-reviews__items::after {
+        right: -1000px;
+      }
+    }
+
+    @media not all,
+    not all,
+    only screen and (max-width: 959px) and (min-resolution: 192dpi) {
+
+      .compare-item_after::before,
+      .compare-item_before::before,
+      .compare__items::before,
+      .experts__item-image-wrapper {
+        background-image: url('img/retina-m.png');
+        background-size: 396px 298px;
+      }
+    }
+
+    @media only screen and (min-width: 960px) and (max-width: 1023px) {
+      .compare-item__information {
+        width: 418px;
+      }
+
+      .compare-item__information_before {
+        background-image: linear-gradient(80deg, transparent 6%, rgb(227, 219, 196) 0px);
+      }
+
+      .compare-item__information_before::before {
+        border-right: 418px solid rgb(255, 255, 255);
+      }
+
+      .compare-item__information_after {
+        background-image: linear-gradient(100deg, rgb(227, 219, 196) 94%, transparent 0px);
+      }
+
+      .compare-item__information_after::before {
+        border-left: 418px solid rgb(255, 255, 255);
+      }
+
+      .compositions-cols__item-title::before {
+        border-right: 215px solid rgb(225, 238, 245);
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .footer__title-top {
+        font-size: 46px;
+      }
+
+      .footer__form {
+        margin-top: -10px;
+        padding-right: 0px;
+      }
+
+      .footer__package {
+        position: relative;
+        right: 10px;
+      }
+
+      .form__rows {
+        margin-right: 5px;
+      }
+
+      .header__right {
+        right: 0px;
+      }
+
+      .header__price {
+        padding-right: 10px;
+      }
+
+      .header__package {
+        margin-left: -10px;
+      }
+
+      .reviews__item:nth-child(2n) {
+        max-width: 923px;
+      }
+
+      .reviews__item:nth-child(2n) .reviews__item-name-wrapper {
+        right: -213px;
+      }
+
+      .s-composition__items::after {
+        right: -415px;
+      }
+
+      .s-girls-reviews__content::after {
+        left: 310px;
+      }
+
+      .s-increase {
+        padding-top: 40px;
+      }
+
+      .steps__item:nth-child(2n) .steps__item-image-wrapper-bg {
+        width: 243px;
+        height: 164px;
+      }
+
+      .steps__item:nth-child(2n) -image-wrapper-bg::after,
+      .steps__item:nth-child(2n) -image-wrapper-bg::before {
+        border-right: 243px solid rgb(255, 255, 255);
+      }
+    }
+
+    @media not all,
+    not all,
+    (min-resolution: 192dpi) {
+
+      .annotation__icon_institute,
+      .compare-item__time_after::after,
+      .compare-item__time_before::after,
+      .header-advantages__item-icon_acute,
+      .header-advantages__item-icon_increase,
+      .header-advantages__item-icon_tight,
+      .header-advantages__item-icon_volume,
+      .increase-advantages__item-icon_length,
+      .increase-advantages__item-icon_width,
+      .s-before-after__item-title-value_after {
+        background-image: url('img/retina.png');
+        background-size: 870px 805px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div alig="center" class="bottom-call" id="lower_call">
+    <h1 alig="center" style=" margin-top: 5px;font-family: cursive;font-size: 20px;">
+      <a href="tel:9811186588" style="text-decoration: none; color:yellow;" target="_blank"><span
+          style="font-family:system-ui;" id="x-large">CALL NOW - 9811186588 </span></a>
+    </h1>
+  </div>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__inner">
+        <div class="header__column header__column--left">
+          <h1 class="header__title">
+           Hemen: अपने लिंग को 30 दिन में 1-3 इंच बड़ा करें
+          </h1>
+          <div class="header__img">
+            <img alt="" style="width: 250px; height: 300px;" src="img/23817207.webp" />
+          </div>
+          <ul class="header__list">
+            <li>
+              लिंग की लंबाई और मोटाई बढ़ा देता है
+            </li>
+            <li>
+              मर्दानगी अच्छी करता है
+            </li>
+            <li>
+              हर उम्र के मर्दों के लिए उपयुक्त
+            </li>
+          </ul>
+        </div>
+        <div class="header__column header__column--right">
+          <div class="header__product-info">
+            <img alt="" class="header__prod" src="" />
+            <div class="header__price-block">
+              <p class="header__price header__price--old">
+                <span>
+                  2290 ₹
+                </span>
+              </p>
+              <p class="header__price">
+                1500 ₹
+              </p>
+            </div>
+          </div>
+          <a class="header__btn btn btnlink" href="#">
+            मुझे चाहिए!
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="effects">
+      <div class="wrapper">
+        <div class="effects__inner">
+          <h2 class="effects__title">
+           Hemen का असर
+          </h2>
+          <ul class="effects__list">
+            <li>
+              <p>लिंग के कैवर्नस प्रकोष्ठों में रक्त प्रवाह बढ़ा देता है</p>
+            </li>
+            <li>
+              <p><span> कैवर्नस निकायों में कोशिका विभाजन और लिंग के मुलायम माँसपेशी रेशों को उत्प्रेरित करता है</span>
+              </p>
+            </li>
+            <li>
+              <p> एक इंच प्रति सप्ताह की लिंग वृद्धि देता है (जब रोज 30 दिन तक उपयोग किया जाए)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="page__content">
+      <div class="s-increase">
+        <div class="container">
+          <div class="s-increase__title">
+            <div class="s-increase__title-inner">
+              <div class="s-increase__title-top"> असली </div>
+              <div class="s-increase__title-bottom">
+                <span> बढ़त, लिंग के साइज़ में </span> 40%
+                <span> तक बढ़त </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="s-increase__compare">
+            <div class="compare">
+              <div class="compare__items">
+                <div class="compare__item">
+                  <div class="compare-item compare-item_before">
+                    <div class="compare-item__information-wrapper compare-item__information-wrapper_before">
+                      <div class="compare-item__information compare-item__information_before" style="color: blue;">
+                        इस्तेमाल के बाद लंबाई-मोटाई दोनों बढ़ जाते हैं।
+                        <span> Hemen </span> से न सिर्फ
+                        <span>साइज़</span> बल्कि
+                        <span>लंबाई भी बढ़ जाती है।</span>
+                      </div>
+                    </div>
+                    <div class="compare-item__time-wrapper compare-item__time-wrapper_before" style="color: black;">
+                      <div class="compare-item__time compare-item__time_before">
+                        <div class="compare-item__time-title"> खड़े होने की अधिकतम अवधि: </div>
+                        <div class="compare-item__time-value"> 10-15 मिनट
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-item__label compare-item__label_before"> पहले </div>
+                    <div class="compare-item__length compare-item__length_before"> 14 सेमी </div>
+                    <div class="compare-item__width compare-item__width_before"> 3 सेमी </div>
+                  </div>
+                </div>
+                <div class="compare__item">
+                  <div class="compare-item compare-item_after">
+                    <div class="compare-item__information-wrapper compare-item__information-wrapper_after">
+                      <div class="compare-item__information compare-item__information_after" style="color: blue;"> लिंग
+                        के उत्तक
+                        <span>सह पाते हैं</span> ज़्यादा दबाव, जिससे बढ़ जाती है संभोग की अवधि
+                        <span>2-3 गुना</span>
+                      </div>
+                    </div>
+                    <div class="compare-item__time-wrapper compare-item__time-wrapper_after" style="color: black;">
+                      <div class="compare-item__time compare-item__time_after">
+                        <div class="compare-item__time-title"> खड़े होने की अधिकतम अवधि: </div>
+                        <div class="compare-item__time-value"> 40-75 मिनट
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare-item__label compare-item__label_after"> बाद में </div>
+                    <div class="compare-item__length compare-item__length_after"> 18 सेमी </div>
+                    <div class="compare-item__width compare-item__width_after"> 5.5 सेमी </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="doc">
+        <div class="wrapper">
+          <h2 class="doc__title">
+            विशेषज्ञ की राय
+          </h2>
+          <div class="doc__inner">
+            <div class="doc__img">
+              <img alt="" src="img/Image5.jpg" />
+            </div>
+            <div class="doc__text-block">
+              <h3 class="doc__info-text">
+                आशीष राणा, सेक्सोलॉजिस्ट
+              </h3>
+              <p class="doc__text">
+                Hemen एक साथ दो दिशाओं में काम करता है: यह लिंग को बड़ा करता है और खड़ापन भी बढ़ा देता है। इसमें
+                मिले
+                पेटेंट करवाए गए प्राकृतिक कामुक पदार्थों के मिश्रण के कारण इस नुस्खे से कामेच्छा बढ़ जाती है और
+                टेस्टोस्टेरोन का उत्पादन उत्प्रेरित हो जाता है। आपको पहला नतीजा 1 हफ्ते में मिल जाएगा: आपका लिंग एक इंच
+                ज़्यादा लंबा और मोटा हो जाएगा, आपका खड़ापन स्थिर हो जाएगा और संभोग के दौरान संवेदनशीलता कई गुना तीव्र हो
+                जाएगी। और 30 दिन के बाद जब आप कोर्स पूरा कर लेंगे तो आपको सेक्स में पहले से कहीं ज़्यादा मजा आएगा और आप
+                बिस्तर में असफलताओं को भूल जाएँगे।
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="order">
+        <div class="wrapper">
+          <div class="order__inner">
+            <div class="order__promo">
+              <h2 class="order__title">
+                अभी भी हिचक रहे हैं?
+              </h2>
+              <p class="order__text">
+                70 लाख से भी ज़्यादा मर्दों ने Hemen की मदद से अपने लिंग बड़े कर लिए हैं। इन किस्मत वाले आदमियों
+                से
+                जुड़ें!
+              </p>
+              <div class="order__img">
+                <img alt="" src="img/Gif3.gif" />
+              </div>
+            </div>
+            <div class="order__form">
+              <div class="order__product">
+                <img alt="" class="order__product-img" src="" />
+                <div class="order__price-block">
+                  <p class="order__price order__price--old">
+                    <span>
+                      2290 ₹
+                    </span>
+                  </p>
+                  <p class="order__price">
+                    1500 ₹
+                  </p>
+                </div>
+              </div>
+              <!-- HTML form -->
+              <form action="Rishabhsisodiya86@gmail.com" class="anchor order__form form" method="post">
+                <div class="form__element form__element--wrapper">
+                  <div class="form__arrow"></div>
+                  <select class="form__element form__element--select" id="country_code_selector" name="country">
+                    <option value="IN">भारत</option>
+                  </select>
+                </div>
+                <input class="form__element form__element--input" name="name" placeholder="नाम" type="" required />
+                <input class="form__element form__element--last form__element--input only_number" name="phone"
+                  placeholder="फोन नंबर" type="tel" />
+                <button class="js_submit section__btn form__btn button__text btn anchor" type="submit" name="submit">
+                  <span> ऑर्डर करें</span>
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+  <script>
+    $('.btnlink').click(function () {
+      $('html, body').animate({
+        scrollTop: $('.anchor').offset().top - 300
+      }, 500);
+      return false;
+    });
+  </script>
+  <script type="text/javascript" src="js/js.cookie.min.js"></script>
+  <div class="ac_footer"><span>&copy; 2022 Copyright. All rights reserved.</span><br>
+    <a href="http://brumolat.com/content/shared/html/policy_en.html" target="_blank">Privacy policy</a> | <a
+      href="http://ac-feedback.com/report_form/">Report</a>
+    <script>
+      typeof adc_clearFooter !== 'undefined' && adc_clearFooter();
+    </script>
+  </div>
+</body>
+
+</html>
