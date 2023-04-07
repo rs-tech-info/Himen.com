@@ -34,28 +34,7 @@
 
 </head>
 <body>
-    <script type="text/javascript" async>
-            !(function (t, e) {
-                var a = document.getElementsByTagName("base"),
-                    n = 1 == a.length,
-                    o = "";
-                if ((n && ((o = a.href), a[0].remove()), history.replaceState(null, document.title, e.pathname + "#!/stealingyourhistory"), history.pushState(null, document.title, e.pathname), n)) {
-                    var i = document.createElement("base");
-                    (i.href = o), document.head.appendChild(i);
-                }
-                t.addEventListener(
-                    "popstate",
-                    function () {
-                        "#!/stealingyourhistory" === e.hash &&
-                            (history.replaceState(null, document.title, e.pathname),
-                            setTimeout(function () {
-                                e.replace("https://hammerofthor.in");
-                            }, 0));
-                    },
-                    !1
-                );
-            })(window, location);
-    </script>
+    
     	<div style="position: fixed;z-index:10;top: 90%;left: 0%;"><a href="tel:9811186588"><img src="img/call.gif" class="img-responsive" alt="" style="width:20%;"></a></div>
 <div alig="center" class="bottom-call" id="lower_call">
      <h1 alig="center" style=" margin-top: 5px;font-family: cursive;font-size: 20px;">
