@@ -9,8 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $to_email = 'recipient@example.com';
     $subject = 'New Order from ' . $name;
     $message = "Name: $name\nPhone: $phone\nCountry: $country";
-    $headers = 'From: yourname@example.com' . "\r\n" .
-        'Reply-To: yourname@example.com' . "\r\n" .
+    $headers = 'From: rishabhsisodiya86@gmail.com' . "\r\n" .
+        'Reply-To: rishabhsisodiya1998@gmail.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     // Send the email using the mail() function
